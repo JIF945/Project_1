@@ -2,52 +2,94 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
     <title> organizer </title>
-    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
 </head>
 
+<!--navigation bar-->
 <body class="min-100-vh flex column">
-    <header>
-        <section class="header">
-            <h1> Super Shopper</h1>
-        </section>
-            <nav>
-                <a href="#calender-list"> List</a>
-                <a href="#location-of-product"> Location </a>
-                <a href="#About"> About</a>
-                <a href="#Contact"> Contact Information </a>
-            </nav>
-    </header>
-    <main>
-        <section class="banner"> </section>
+    <nav class="navbar navbar-expand-lg custom-navbar navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Super Shopper</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link" href="#calendar-list">List</a>
+                    <a class="nav-item nav-link" href="#location-of-product">Location</a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link" href="#contact">Contact Information</a>
 
-        <section class="calender-list">
-            <h2> List </h2>
-            <ol id="calender-list" class="ui-state-default ui-sortable-handle">
-                <li class="ui-state-default ui-sortable-handle"><input type="text" id="item" placeholder="first item"></li>
-                <li class="ui-state-default ui-sortable-handle"> second item</li>
-                <li class="ui-state-default ui-sortable-handle"> third item</li>
-                <li class="ui-state-default ui-sortable-handle"> Fourth item</li>
-                <li class="ui-state-default ui-sortable-handle"> Fifth item </li>
-            </ol>
-            </list>
-            <button id="save-list">Save List</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner  -->
+    <section class="container my-5">
+        <div class="row">
+            Banner Section
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="row justify-content-around">
+            <div class="col-lg-4">
+                <div class="card" id="calendar-list">
+                    <h2 class="card-header bg-info">
+                        List
+                    </h2>
+                    <div class="card-body">
+                        <p class="card-text">
+                            </p><ol id="calender-list" class="ui-state-default ui-sortable-handle">
+                            <li class="ui-state-default ui-sortable-handle"><input type="text" id="item" placeholder="first item"></li>
+                            <li class="ui-state-default ui-sortable-handle"> second item</li>
+                            <li class="ui-state-default ui-sortable-handle"> third item</li>
+                            <li class="ui-state-default ui-sortable-handle"> Fourth item</li>
+                            <li class="ui-state-default ui-sortable-handle"> Fifth item </li>
+                        </ol>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="card" id="location-of-product">
+                    <h3 class="card-header bg-info">
+                        Location of Item
+                    </h3>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26844.255874900507!2d-96.6426624!3d32.751616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1689209446297!5m2!1sen!2sus" width="325" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <h2 class="card-header bg-info">
+                        About Our Site
+                    </h2>
+                    <div class="card-body" id="about">
+                        <p> we thought to create a website where we can make an ordered list, rearange the list, to the
+                            most
+                            wanted item and then be able to find the nearest located item </p>
+                    </div>
+                </div>
+            </div>
         </section>
-            <section class="location-of-product" id="location-of-product">
-                <h2> Location of item</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26844.255874900507!2d-96.6426624!3d32.751616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1689209446297!5m2!1sen!2sus"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-            <section class="About" id="About">
-                <h2> About the website</h2>
-                <p> we thought to create a website where we can make an ordered list, rearange the list, to the most
-                    wanted item and then be able to find the nearest located item </p>
-            </section>
+
     </main>
+
 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
