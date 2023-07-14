@@ -1,0 +1,4 @@
+
+$(function () {
+    $('#calender-list').sortable();
+  });
