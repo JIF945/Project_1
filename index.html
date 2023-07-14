@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> organizer </title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body class="min-100-vh flex column">
@@ -23,18 +23,18 @@
     <main>
         <section class="banner"> </section>
 
-            <section class="calender-list">
-                <h2> List </h2>
-                <ol id="calender-list" class="ui-state-default ui-sortable-handle">
-                    <li class="ui-state-default ui-sortable-handle"><input type="text" id="item" placeholder="first item"></li>
-                    <li class="ui-state-default ui-sortable-handle"> second item</li>
-                    <li class="ui-state-default ui-sortable-handle"> third item</li>
-                    <li class="ui-state-default ui-sortable-handle"> Fourth item</li>
-                    <li class="ui-state-default ui-sortable-handle"> Fifth item </li>
-                </ol>
-                </list>
-                <button id="save-list">Save List</button>
-            </section>
+        <section class="calender-list">
+            <h2> List </h2>
+            <ol id="calender-list" class="ui-state-default ui-sortable-handle">
+                <li class="ui-state-default ui-sortable-handle"><input type="text" id="item" placeholder="first item"></li>
+                <li class="ui-state-default ui-sortable-handle"> second item</li>
+                <li class="ui-state-default ui-sortable-handle"> third item</li>
+                <li class="ui-state-default ui-sortable-handle"> Fourth item</li>
+                <li class="ui-state-default ui-sortable-handle"> Fifth item </li>
+            </ol>
+            </list>
+            <button id="save-list">Save List</button>
+        </section>
             <section class="location-of-product" id="location-of-product">
                 <h2> Location of item</h2>
                 <iframe
@@ -47,8 +47,12 @@
                 <p> we thought to create a website where we can make an ordered list, rearange the list, to the most
                     wanted item and then be able to find the nearest located item </p>
             </section>
-
     </main>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./assets/script/script.js"></script>
+
 </body>
 <footer>
     <section class="Contact" id="Contact">
@@ -71,9 +75,4 @@
             <li><a href="mailto:whitney.steen17@hotmail.com">Email </a></li>
         </p>
     </section>
-
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="./assets/script/script.js"></script>
-
 </html>
