@@ -17,5 +17,5 @@ itemForm.on("submit", function(event) {
 })
 
 $(function () {
-    $('#calender-list').sortable();
+    $('#item-list').sortable();
   });
