@@ -60,3 +60,37 @@ $(function () {
   $('#item-list').sortable();
 });
 
+
+
+var list = document.querySelector("#list");
+var locationOfProduct = document.querySelector("#location-of-product");
+var about = document.querySelector("#about");
+
+var navList = document.querySelector("#nav-list");
+var navLoc = document.querySelector("#nav-loc");
+var navAbout = document.querySelector("#nav-about");
+
+navList.addEventListener("click", function() {
+  if (navList !== false) {
+    list.setAttribute("style", "display:block");
+    locationOfProduct.setAttribute("style", "display:none");
+    about.setAttribute("style", "display:none");
+  }
+})
+
+navLoc.addEventListener("click", function() {
+  if (navLoc !== false) {
+    list.setAttribute("style", "display:none");
+    locationOfProduct.setAttribute("style", "display:block");
+    about.setAttribute("style", "display:none");
+  }
+})
+
+navAbout = document.querySelector("click", function() {
+  if (navAbout !== false) {
+    list.setAttribute("style", "display:none");
+    locationOfProduct.setAttribute("style", "display:none");
+    about.setAttribute("style", "display:block");
+  }
+})
+
