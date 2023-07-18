@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <title> organizer </title>
+</head>
+
+<!--navigation bar-->
+<body class="flex-wrap">
+    <header>
+        <!-- logo -->
+        <div class="logo pt-3 pl-20 text-xl font-extrabold">
+            <h1 class="bg-blue-500 w-44 p-1 rounded-full text-white text-center">
+                <strong><a href="./index.html">Super Shopper</a></strong>
+            </h1>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="border-b-4 border-blue-500 p-5">
+            <ul class="flex-1 text-right text-align">
+                <li class="list-none inline-block px-5 hover:text-blue-500">
+                    <a href="#list" class="no-underline font-semibold tracking-widest" id="nav-list"> 
+                        List</a>
+                </li>
+                <li class="list-none inline-block px-5 hover:text-blue-500">
+                    <a href="#location-of-product" class="no-underline font-semibold tracking-widest" id="nav-loc"> 
+                        Location </a>
+                </li>
+                <li class="list-none inline-block px-5 hover:text-blue-500">
+                    <a href="#about" class="no-underline font-semibold tracking-widest" id="nav-about">
+                        About</a>
+                </li>
+                <li class="list-none inline-block px-5 pr-20 hover:text-blue-500">
+                    <a href="#contact" class="no-underline font-semibold tracking-widest" id="nav-contact">
+                        Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- banner section -->
+        <section class="py-2 mt-1 px-5 text-center bg-white text-neutral-600 dark:text-neutral-200"> This will be banner
+            section if we are going to use it
+        </section>
+    </header>
+
+    <!-- banner  -->
+    <section class="container my-5">
+        <div class="row">
+            Banner Section
+        </div>
+    </section>
+
+                       <!-- <form class="ui-state-default" id="item-form">
+                            <input type="text" id="item-input" placeholder="Add Item">
+                            <button>&#10133;</button>
+                        </form>
+                        <ol class="ui-state-default" id="item-list"></ol>
+                        <button id="save-option"> Save </button>
+                        <button id="new">New List</button>-->
+
+ <!-- Main contents -->
+ <main class="flex flex-wrap justify-evenly h-screen">
+
+    <!-- List section -->
+    <section class="w-2/6" id="list">
+
+        <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div class="border-b-2 border-neutral-100 px-2 py-3 dark:border-neutral-600 dark:text-neutral-50">
+
+                <h3 class="bg-blue-500 rounded-md p-2 text-center text-xl font-medium leading-tight text-white">
+                    List Items
+                </h3>
+            </div>
+
+            <form class="ui-state-default" id="item-form">
+            <input type="text" id="item-input" placeholder="Add Item">
+            </form>
+
+            <div class="p-3 text-base text-neutral-600 dark:text-neutral-200">
+                <ol class="list-decimal px-4 ui-state-default" id="item-list"></ol>
+            </div>
+
+            <div class="text-center border-t-2 border-neutral-100 px-6 py-1 dark:border-neutral-600 dark:text-neutral-50">
+                <button type="button" class="inline-block rounded border-blue-500 border-2 px-6 pb-1 pt-1 text-xs font-medium uppercase leading-normal text-neutral-600 dark:text-neutral-200">
+                    Add
+                </button>
+                <button type="button" class="inline-block rounded border-blue-500 border-2 px-5 pb-1 pt-1 text-xs font-medium uppercase leading-norma text-neutral-600 dark:text-neutral-200">
+                    Clear
+                </button>
+            </div>
+        </div>
+    </section>
+
+        <!-- Location of products -->
+        <section class="w-2/6" id="location-of-product">
+
+            <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div class="border-b-2 border-neutral-100 px-2 py-3 dark:border-neutral-600 dark:text-neutral-50">
+
+                    <h3 class="bg-blue-500 rounded-md p-2 text-center text-xl font-medium leading-tight text-white">
+                        Location of Products
+                    </h3>
+
+                </div>
+                <div class="p-3 text-base text-neutral-600 dark:text-neutral-200">
+
+                    <p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26844.255874900507!2d-96.6426624!3d32.751616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1689209446297!5m2!1sen!2sus" width="325" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </p>
+
+                </div>
+                <div class="text-center border-t-2 border-neutral-100 px-6 py-1 dark:border-neutral-600 dark:text-neutral-50">
+                    <!-- Some text can be placed here if needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="w-2/6" id="about">
+
+            <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div class="border-b-2 border-neutral-100 px-2 py-3 dark:border-neutral-600 dark:text-neutral-50">
+
+                    <h3 class="bg-blue-500 rounded-md p-2 text-center text-xl font-medium leading-tight text-white">
+                        About the website
+                    </h3>
+
+                </div>
+
+                <div class="p-3 text-base text-neutral-600 dark:text-neutral-200">
+
+                    <p>We thought to create a website where we can make an ordered list, rearange the list, to the most
+                        wanted item and then be able to find the nearest located item.</p>
+                </div>
+
+                <div
+                    class="text-center border-t-2 border-neutral-100 px-6 py-1 dark:border-neutral-600 dark:text-neutral-50">
+                    <!-- Some text can be placed here if needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./assets/script/script.js"></script>
+
+</body>
+<footer class="flex justify-evenly bg-gray-100 px-5 border-t-4 border-blue-500 text-neutral-600 dark:text-neutral-200">
+    <section class="py-2 mt-1 px-5" id="contact">
+        <h4 class="text-center">Made by:</h4>
+
+        <ul class="flex">
+            <li class="pr-8">
+                <p class="font-semibold text-center">Fay Lopez</p>
+                <p class="text-sm text-center"><a href="mailto:faysialopez3@gmail.com"
+                        class="hover:text-blue-500">Email</a> |
+                    <a href="https://github.com/faysia1" target="_blank" class="hover:text-blue-500">GitHub</a>
+                </p>
+            </li>
+
+            <li class="px-8">
+                <p class="font-semibold text-center">Joshua James</p>
+                <p class="text-sm text-center"><a href="mailto:joshua.james918@gmail.com"
+                        class="hover:text-blue-500">Email</a> |
+                    <a href="https://github.com/JIF945" target="_blank" class="hover:text-blue-500">GitHub</a>
+                </p>
+            </li>
+
+            <li class="px-8">
+                <p class="font-semibold text-center">Sian Khai</p>
+                <p class="text-sm text-center"><a href="mailto:ikhaipi@gmail.comm"
+                        class="hover:text-blue-500">Email</a> |
+                    <a href="https://github.com/SKhai77" target="_blank" class="hover:text-blue-500">GitHub</a>
+                </p>
+            </li>
+
+            <li class="pl-8">
+                <p class="font-semibold text-center">Whitney Steen</p>
+                <p class="text-sm text-center"><a href="mailto:whitney.steen17@hotmail.com"
+                        class="hover:text-blue-500">Email</a> |
+                    <a href="https://github.com/WNicoleS" target="_blank" class="hover:text-blue-500">GitHub</a>
+                </p>
+            </li>
+        </ul>
+    </section>
+</footer>
+</body>
+
+</html>
