@@ -5,6 +5,7 @@ var saveButton = $('#save-option');
 
 var listContents = [];
 
+//renders list items to the page
 function renderItems() {
   var itemText = itemInput.val();
   listContents.push(itemText);
@@ -17,6 +18,11 @@ function renderItems() {
   }
 }
 
+function storeItems() {
+  localStorage.setItem("items", JSON.stringify(listContents));
+}
+
+//event listener for the "add" button
 itemForm.on("submit", function (event) {
   event.preventDefault();
 
@@ -33,12 +39,22 @@ function init()  {
   renderItems();
 }
 
+//event listener for the "save" button
 saveButton.on("click", function (event) {
   event.preventDefault();
 
-  localStorage.setItem("items", JSON.stringify(listContents));
-
+  storeItems();
+  saveList();
+  
 });
+
+function saveList()  {
+  var savedListEl = document.createElement('a');
+  savedListEl.textContent = "List #1";
+  document.body.appendChild(savedListEl);
+  savedListEl.href = ('lists.html');
+  savedListEl.target = '_blank';
+}
 
 $(function () {
   $('#item-list').sortable();
