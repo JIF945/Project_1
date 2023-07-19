@@ -86,7 +86,7 @@ navLoc.addEventListener("click", function() {
   }
 })
 
-navAbout = document.querySelector("click", function() {
+navAbout.addEventListener("click", function() {
   if (navAbout !== false) {
     list.setAttribute("style", "display:none");
     locationOfProduct.setAttribute("style", "display:none");
