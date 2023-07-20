@@ -73,27 +73,27 @@
                     <form class="ui-state-default" id="item-form">
 
                         <div class="p-3 text-base text-neutral-600 dark:text-neutral-200">
-    
+
                             <div class="text-center pb-2">
                                     <input type="text" id="item-input"
                                         class="placeholder:italic border-gray-300 border-1  bg-white border h-8 rounded-md pl-4"
                                         placeholder="Add Item">
-                                    
+
                                     <ol id="item-list" class="list-decimal px-4 ui-state-default"></ol>
-    
+
                                     <button
                                         class="inline-block rounded border-neutral-500 border-2 h-7 w-12 text-xs font-medium uppercase leading-norma text-neutral-600 dark:text-neutral-200 hover:bg-neutral-500 hover:text-amber-50">
-                                        Add 
+                                        Add
                                     </button>
-    
+
                                     <button type="button"
                                         class="inline-block rounded border-neutral-500 border-2 h-7 w-12 text-xs font-medium uppercase leading-norma text-neutral-600 dark:text-neutral-200 hover:bg-neutral-500 hover:text-amber-50" id="save-option">
                                         Save
                                     </button>
-    
+
                                     <button type="button"
                                         class="inline-block rounded border-neutral-500 border-2 h-7 w-12 text-xs font-medium uppercase leading-norma text-neutral-600 dark:text-neutral-200 hover:bg-neutral-500 hover:text-amber-50">
-                                        Del 
+                                        Del
                                     </button>
                     </div>
                 </div>
@@ -139,14 +139,18 @@
                         </h3>
 
                     </div>
+                    <!-- location of autocomplete search bar -->
+                    <input id="autocomplete" placeholder="enter a place" type="text"/>
+                    <!-- location of  -->
+                    <div id="map" style="height:200px;"></div>
                     <div class="p-3 text-base text-neutral-600 dark:text-neutral-200">
 
-                        <p>
+                        <!-- <p>
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26844.255874900507!2d-96.6426624!3d32.751616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1689209446297!5m2!1sen!2sus"
                                 width="325" height="225" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </p>
+                        </p> -->
 
                     </div>
                     <div
@@ -232,5 +236,22 @@
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="./assets/script/script.js"></script>
+        <script src="./assets/script/googlemaps.js"></script>
 
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkXsD8ZQCj0xUFaew9Zj4ek9pKC8dO1sA&libraries=places&callback=initMap"async defer>
+</script>
+<script>
+
+   function onPlaceChanged() {
+        var place =autocomplete.getPlace();
+        if(!place.geometry) {
+            // user did not select a prediction; reset the input field
+            document.getElementById('autocomplete').placeholder = 'place near me';
+        } else {
+            // display details about the valid place
+            document.getElementById('details').innerHTML = place.name;
+        }
+    }
+</script>
 </html>
