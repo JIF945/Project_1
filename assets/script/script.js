@@ -63,6 +63,11 @@ $(function () {
     $('#item-list').sortable();
 });
 
+window.onload = function() {
+    if (localStorage.getItem("items") !== null) {
+        saveList();
+    }
+}
 
 
 var list = document.querySelector("#list");
