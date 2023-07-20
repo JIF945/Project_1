@@ -9,32 +9,32 @@
     <link rel="stylesheet" href="stylesheet.css" />
 </head>
 
-<body class="flex-wrap">
+<body class="flex-wrap bg-amber-50 text-neutral-500">
 
     <header>
         <!-- logo -->
         <div class="logo pt-3 pl-20 text-xl font-extrabold">
-            <h1 class="bg-blue-500 w-44 p-1 rounded-full text-white text-center">
+            <h1 class="bg-neutral-500 w-44 p-1 rounded-full text-amber-50 text-center">
                 <strong><a href="./index.html">Super Shopper</a></strong>
             </h1>
         </div>
 
         <!-- Navbar -->
-        <nav class="border-b-4 border-blue-500 p-5">
+        <nav class="border-double border-b-8 border-red-300 p-5">
             <ul class="flex-1 text-right text-align">
-                <li class="list-none inline-block px-5 hover:text-blue-500">
-                    <a href="#list" class="no-underline font-semibold tracking-widest"> 
+                <li class="list-none inline-block px-5 hover:text-red-300">
+                    <a href="#list" class="no-underline font-semibold tracking-widest">
                         List</a>
                 </li>
-                <li class="list-none inline-block px-5 hover:text-blue-500">
-                    <a href="#location-of-product" class="no-underline font-semibold tracking-widest"> 
+                <li class="list-none inline-block px-5 hover:text-red-300">
+                    <a href="#location-of-product" class="no-underline font-semibold tracking-widest">
                         Location </a>
                 </li>
-                <li class="list-none inline-block px-5 hover:text-blue-500">
+                <li class="list-none inline-block px-5 hover:text-red-300">
                     <a href="#about" class="no-underline font-semibold tracking-widest">
                         About</a>
                 </li>
-                <li class="list-none inline-block px-5 pr-20 hover:text-blue-500">
+                <li class="list-none inline-block px-5 pr-20 hover:text-red-300">
                     <a href="#contact" class="no-underline font-semibold tracking-widest">
                         Contact</a>
                 </li>
@@ -42,68 +42,76 @@
         </nav>
 
         <!-- banner section -->
-        <section class="py-2 mt-1 px-5 text-center bg-white text-neutral-600 dark:text-neutral-200"> This will be banner
-            section if we are going to use it
+        <section>
+            <img class="object-cover w-full" src="banner.jpg" banner" alt="Writing board with groceries">           
         </section>
 
     </header>
 
     <!-- Main contents -->
-    <main class="flex flex-wrap justify-evenly h-screen">
+    <main class="flex justify-evenly h-screen">
 
         <!-- List section -->
-        <section class="w-2/6" id="list">
+        <section class="m-1 ml-2 w-2/6" id="list">
 
-            <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div
+                class="block rounded-lg bg-amber-50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                 <div class="border-b-2 border-neutral-100 px-2 py-3 dark:border-neutral-600 dark:text-neutral-50">
 
-                    <h3 class="bg-blue-500 rounded-md p-2 text-center text-xl font-medium leading-tight text-white">
+                    <h3 class="bg-neutral-500 rounded-md p-2 text-center text-xl font-medium leading-tight text-amber-50">
                         List Items
                     </h3>
                 </div>
 
                 <form>
 
-                <div class="p-3 text-base text-neutral-600 dark:text-neutral-200">
+                    <div class="p-3 text-base text-neutral-600 dark:text-neutral-200">
 
-                    <div class="text-center">
-                    <input id="add-item" class="placeholder:italic border-gray-300 border-1  bg-white border h-8 rounded-md pl-4" placeholder="Add items">
+                        <div class="text-center pb-2">
+                            <input id="add-item"
+                                class="placeholder:italic border-gray-300 border-1  bg-white border h-8 rounded-md pl-4"
+                                placeholder="Add items">
 
-                    <button type="button" class="inline-block rounded border-blue-500 border-2 px-2 pb-1 pt-1 text-xs font-medium uppercase leading-norma text-neutral-600 dark:text-neutral-200">
-                        New
-                    </button>
-                    
-                    <button type="button" id="add-btn" class="inline-block rounded border-blue-500 border-2 px-2 pb-1 pt-1 text-xs font-medium uppercase leading-normal text-neutral-600 dark:text-neutral-200">
-                        Add
-                    </button>
+                            <button type="button"
+                                class="inline-block rounded border-neutral-500 border-2 h-7 w-12 text-xs font-medium uppercase leading-norma text-neutral-600 dark:text-neutral-200 hover:bg-neutral-500 hover:text-amber-50">
+                                Add 
+                            </button>
 
-                    <button type="button" class="inline-block rounded border-blue-500 border-2 px-3 pb-1 pt-1 text-xs font-medium uppercase leading-norma text-neutral-600 dark:text-neutral-200">
-                        Del
-                    </button>
+                            <button type="button"
+                                class="inline-block rounded border-neutral-500 border-2 h-7 w-12 text-xs font-medium uppercase leading-norma text-neutral-600 dark:text-neutral-200 hover:bg-neutral-500 hover:text-amber-50">
+                                Save
+                            </button>
 
+                            <button type="button"
+                                class="inline-block rounded border-neutral-500 border-2 h-7 w-12 text-xs font-medium uppercase leading-norma text-neutral-600 dark:text-neutral-200 hover:bg-neutral-500 hover:text-amber-50">
+                                Del 
+                            </button>
+
+                        </div>
+
+                        <ol id="item-list" class="list-decimal px-4">
+                            <li>Apple</li>
+                            <li>Banana</li>
+                            <li>Cranberry</li>
+                        </ol>
                     </div>
 
-                    <ol class="list-decimal px-4">
-                        <li>Apple</li>
-                        <li>Banana</li>
-                        <li>Cranberry</li>
-                    </ol>
-                </div>
-
-                <div class="text-center border-t-2 border-neutral-100 px-6 py-1 dark:border-neutral-600 dark:text-neutral-50">                  
-     
-                </div>
+                    <div
+                        class="text-center border-t-2 border-neutral-100 px-6 py-1 dark:border-neutral-600 dark:text-neutral-50">
+                         <!-- Some text can be placed here if needed -->
+                    </div>
                 </form>
             </div>
         </section>
 
         <!-- Location of products -->
-        <section class="w-2/6" id="location-of-product">
+        <section class="m-1 w-2/6" id="location-of-product">
 
-            <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div
+                class="block rounded-lg bg-amber-50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                 <div class="border-b-2 border-neutral-100 px-2 py-3 dark:border-neutral-600 dark:text-neutral-50">
 
-                    <h3 class="bg-blue-500 rounded-md p-2 text-center text-xl font-medium leading-tight text-white">
+                    <h3 class="bg-neutral-500 rounded-md p-2 text-center text-xl font-medium leading-tight text-amber-50">
                         Location of Products
                     </h3>
 
@@ -113,19 +121,21 @@
                     <p>You will see the location of the item where you can buy it.</p>
 
                 </div>
-                <div class="text-center border-t-2 border-neutral-100 px-6 py-1 dark:border-neutral-600 dark:text-neutral-50">
+                <div
+                    class="text-center border-t-2 border-neutral-100 px-6 py-1 dark:border-neutral-600 dark:text-neutral-50">
                     <!-- Some text can be placed here if needed -->
                 </div>
             </div>
         </section>
 
         <!-- About -->
-        <section class="w-2/6" id="about">
+        <section class="m-1 mr-2 w-2/6" id="about">
 
-            <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div
+                class="block rounded-lg bg-amber-50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                 <div class="border-b-2 border-neutral-100 px-2 py-3 dark:border-neutral-600 dark:text-neutral-50">
 
-                    <h3 class="bg-blue-500 rounded-md p-2 text-center text-xl font-medium leading-tight text-white">
+                    <h3 class="bg-neutral-500 rounded-md p-2 text-center text-xl font-medium leading-tight text-amber-50">
                         About the website
                     </h3>
 
@@ -146,7 +156,8 @@
 
     </main>
 
-    <footer class="flex justify-evenly bg-gray-100 px-5 border-t-4 border-blue-500 text-neutral-600 dark:text-neutral-200">
+    <footer
+        class="flex justify-center bg-amber-50 px-5 border-double border-t-4 border-red-300 text-neutral-600 dark:text-neutral-200">
         <section class="py-2 mt-1 px-5" id="contact">
             <h4 class="text-center">Made by:</h4>
 
@@ -154,32 +165,32 @@
                 <li class="pr-8">
                     <p class="font-semibold text-center">Fay Lopez</p>
                     <p class="text-sm text-center"><a href="mailto:faysialopez3@gmail.com"
-                            class="hover:text-blue-500">Email</a> |
-                        <a href="https://github.com/faysia1" target="_blank" class="hover:text-blue-500">GitHub</a>
+                            class="hover:text-red-300">Email</a> |
+                        <a href="https://github.com/faysia1" target="_blank" class="hover:text-red-300">GitHub</a>
                     </p>
                 </li>
 
                 <li class="px-8">
                     <p class="font-semibold text-center">Joshua James</p>
                     <p class="text-sm text-center"><a href="mailto:joshua.james918@gmail.com"
-                            class="hover:text-blue-500">Email</a> |
-                        <a href="https://github.com/JIF945" target="_blank" class="hover:text-blue-500">GitHub</a>
+                            class="hover:text-red-300">Email</a> |
+                        <a href="https://github.com/JIF945" target="_blank" class="hover:text-red-300">GitHub</a>
                     </p>
                 </li>
 
                 <li class="px-8">
                     <p class="font-semibold text-center">Sian Khai</p>
                     <p class="text-sm text-center"><a href="mailto:ikhaipi@gmail.comm"
-                            class="hover:text-blue-500">Email</a> |
-                        <a href="https://github.com/SKhai77" target="_blank" class="hover:text-blue-500">GitHub</a>
+                            class="hover:text-red-300">Email</a> |
+                        <a href="https://github.com/SKhai77" target="_blank" class="hover:text-red-300">GitHub</a>
                     </p>
                 </li>
 
                 <li class="pl-8">
                     <p class="font-semibold text-center">Whitney Steen</p>
                     <p class="text-sm text-center"><a href="mailto:whitney.steen17@hotmail.com"
-                            class="hover:text-blue-500">Email</a> |
-                        <a href="https://github.com/WNicoleS" target="_blank" class="hover:text-blue-500">GitHub</a>
+                            class="hover:text-red-300">Email</a> |
+                        <a href="https://github.com/WNicoleS" target="_blank" class="hover:text-red-300">GitHub</a>
                     </p>
                 </li>
             </ul>
