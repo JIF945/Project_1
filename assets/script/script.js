@@ -29,16 +29,6 @@ itemForm.on("submit", function (event) {
     renderItems();
 })
 
-function init() {
-    var storedItems = JSON.parse(localStorage.getItem("items"));
-
-    if (storedItems !== null) {
-        listContents = storedItems;
-    }
-
-    renderItems();
-}
-
 //event listener for the "save" button
 saveButton.on("click", function (event) {
     event.preventDefault();
@@ -63,6 +53,11 @@ $(function () {
     $('#item-list').sortable();
 });
 
+window.onload = function() {
+    if (localStorage.getItem("items") !== null) {
+        saveList();
+    }
+}
 
 
 var list = document.querySelector("#list");
