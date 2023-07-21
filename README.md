@@ -40,4 +40,4 @@ To use the application,
 - Contact: The site will be redirected to the bottom of the page showing our names and contact information
 
 Preview the homepage:
-![Supper Shopper webpage Screenshot](./assets/screenshot/#.png)
+![Supper Shopper webpage Screenshot](supper-shopper.JPG)
