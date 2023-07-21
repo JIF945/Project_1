@@ -29,7 +29,7 @@ The purpose of this project is to build a shopping list organizer that enables u
 ## Usage
 
 To use the application,
-- Visit the website at: <a herf = "https://jif945.github.io/Project_1/" target="_blank"> Github </a>
+- Visit the website at: [https://jif945.github.io/Project_1/](https://jif945.github.io/Project_1/).
 - You will see the webpage and its navigation buttons such as List, Saved items, Location, and Contact
 - When you click on a navigation button, it will take you to a specific section
 - Home: To go back to the homepage click on the Home button or the logo, "Super Shopper"
