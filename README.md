@@ -7,7 +7,7 @@
 - [Code Languages](#code-languages)
 - [Installation](#installation)
 - [Usage](#usage)
-- 
+- <a herf = "https://jif945.github.io/Project_1/" target ="_blank"> Application </a>
 
 ## Description
 
@@ -42,4 +42,4 @@ To use the application,
 
 
 Preview the homepage:
-![Supper Shopper webpage Screenshot](./assets/screenshot/supper-shopper.png)
+![Supper Shopper webpage Screenshot](super-shopper.png)
