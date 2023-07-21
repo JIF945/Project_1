@@ -7,7 +7,7 @@
 - [Code Languages](#code-languages)
 - [Installation](#installation)
 - [Usage](#usage)
-
+- 
 
 ## Description
 
@@ -18,7 +18,7 @@ The purpose of this project is to build a shopping list organizer that enables u
 
 - HTML
 - CSS/ Tailwind CSS
-- JavaScript
+- JavaScript/ jQuery
 
 
 ## Installation
@@ -33,11 +33,13 @@ To use the application,
 - Visit the website at:(the link will be placed here)
 - You will see the webpage and its navigation buttons such as List, Saved items, Location, and Contact
 - When you click on a navigation button, it will take you to a specific section
+- Home: To go back to the homepage click on the Home button or the logo, "Super Shopper"
 - List: The box to create a list will come forward. You can add/delete items and save them to a list
 - Saved List(s): The box to see saved lists will come forward. Another page opens with the saved lists when the links are clicked
 - Location: The box to show the location of items will come forward. The map will show pins to each location where the item can be found
 - About: The box that shows the purpose of the site will come forward.
 - Contact: The site will be redirected to the bottom of the page showing our names and contact information
 
+
 Preview the homepage:
-![Supper Shopper webpage Screenshot](supper-shopper.JPG)
+![Supper Shopper webpage Screenshot](./assets/screenshot/supper-shopper.png)
